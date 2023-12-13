@@ -1,137 +1,174 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script></script>
-    <title>Difk</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div id="two">
-      <div class="top">
-        <h1 id="dif">Difk.com</h1>
-        <ul id="log">
-          <a href="Login.htm"
-            ><button
-              type="login"
-              id="id1"
-              style="
-                background-color: cyan;
-                margin: 0px;
-                padding: 10px;
-                padding-left: 13px;
-                padding-right: 13px;
-                border-radius: 8px;
-              "
-            >
-              <li>Login</li>
-            </button></a
+    <header
+      class="flex flex-wrap justify-between items-center p-2 bg-black text-white"
+    >
+      <h1 class="font-serif text-[40px] ml-4 hover:bg-red-500 rounded px-5"></h1>
+        <a href="/">hi!</a>
+      </h1>
+      <nav class="flex flex-wrap justify-center items-center ml-[500px]">
+        <a
+          href="/about"
+          class="m-2 mx-8 underline sm:text-red-600 underline-offset-4 hover:text-blue-300"
+          >About</a
+        >
+        <a
+          href="/servises"
+          class="m-2 mx-8 underline underline-offset-4 hover:text-blue-300"
+          >Servise</a
+        >
+        <a
+          href="/contact"
+          class="m-2 mx-8 underline underline-offset-4 hover:text-blue-300"
+          >Contact</a
+        >
+        <a
+          href="/"
+          class="m-2 mx-8 underline underline-offset-4 hover:text-blue-300"
+          >Other</a
+        >
+      </nav>
+      <div
+        id="div1"
+        class="flex flex-wrap justify-between items-center mr-[10px]"
+      >
+        <p>
+          <a
+            href="/signup"
+            class="mr-5 underline underline-offset-4 hover:text-red-400"
+            >Signup</a
           >
-        </ul>
-      </div>
-      <div id="srch">
-        <form action="" method="get" id="sch">
-          <input
-            id="sh"
-            type="text"
-            name="term"
-            placeholder="search here..."
-            id="frm"
-          />
-          <input id="h" onclick="loaddoc()" type="submit" value="search" />
-        </form>
-      </div>
-      <ul>
-        <li id="re">About</li>
-        <li id="re">Blog</li>
-        <li id="re">Shop</li>
-        <li id="re">contact</li>
-      </ul>
-    </div>
-
-    <div id="mi">
-      <a href="Login.htm" style="text-decoration: none; color: white">
-        <div id="my">
-          <img src="yin.png " alt="" id="dyl" width="300px" height="250px" />
-          <ul id="tx">
-            <p>Global Rom Realme Q 6.3 inch</p>
-            <li><br />FCFA 92,163 - FCFA 98,308</li>
-            <p><br />1 piece (Min. Order)</p>
-          </ul>
+        </p>
+        <div id="div2">
+          <p>
+            <a
+              href="/login"
+              class="mr-5 underline underline-offset-4 hover:text-red-400"
+              >Login</a
+            >
+          </p>
+          <div id="div3"></div>
         </div>
-      </a>
-      <div id="my">
-        <img src="yin.jpg" alt="" id="dyl" width="300px" height="250px" />
-        <ul id="tx">
-          <p>Global Rom Realme Q 6.3 inch</p>
-          <li><br />FCFA 92,163 - FCFA 98,308</li>
-          <p><br />1 piece (Min. Order)</p>
-        </ul>
       </div>
-      <div id="my">
-        <img src="tél.jpg" alt="" id="dyl" width="300px" height="250px" />
-        <ul id="tx">
-          <p>Global Rom Realme Q 6.3 inch</p>
-          <li><br />FCFA 92,163 - FCFA 98,308</li>
-          <p><br />1 piece (Min. Order)</p>
-        </ul>
-      </div>
-      <style>
-        #my {
-          display: flex;
-          background-color: #e4e4e4;
-          margin-top: 10px;
-        }
-        #tx {
-          flex-direction: column;
-          padding-top: 20px;
-          align-items: flex-start;
-        }
-        img {
-          opacity: 95%;
-          padding: 20px;
-          border: 5px;
-        }
-      </style>
-    </div>
-    <script>
-      function loaddoc(file) {
-        var xhttp = new XMLHttpRequest();
+    </header>
 
-        xhttp.onload = function () {
-          document.getElementsByTagName("body").innerHTML = this.responseText;
-        };
-        xhttp.open("GET", "demo_test.txt", true);
-        xhttp.send();
-      }
-      console.log("hello, world");
-    </script>
+    <main>
+      <header
+        class="flex justify-between items-center h-[680px] bg-black text-white"
+      >
+        <div>
+          <p class="text-[40px] font-bold ml-[150px]">
+            <span class="text-red-500">I'm </span>Dylan!<br />
+            Web developer
+          </p>
+          <p class="my-5 ml-[150px]">
+            I'm a web developer who loves to code and learn new things. <br />
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+      </header>
+      <aside></aside>
+      <article class="flex flex-wrap my-20 p-10">
+        <img
+          class="w-[400px] h-[400px] rounded-lg"
+          src="images/nature.jpg"
+          alt=""
+        />
+        <div class="w-[600px] m-10">
+          <h2 class="font-serif text-[25px] my-4">About me</h2>
+          <p class="my-5">
+            <span class="font-sans"
+              >I'm a web developer who loves to code and learn new things.</span
+            >
+            <br />
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </article>
+      <section class="flex justify-center my-20 p-8">
+        <div class="w-[350px] h-[400px] p-2 m-2">
+          <img
+            class="w-[250px] h-[300px] ml-8 rounded-lg"
+            src="images/foodapp.jpg"
+            alt=""
+          />
+          <h3 class="text-center m-2">Food App</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy
+          </p>
+        </div>
+        <div class="w-[350px] h-[400px] p-2 m-2">
+          <img
+            class="w-[250px] h-[300px] ml-8 rounded-lg"
+            src="images/social.jpg"
+            alt=""
+          />
+          <h3 class="text-center m-2">Social media App</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy
+          </p>
+        </div>
+        <div class="w-[350px] h-[400px] m-2 p-2">
+          <img
+            class="w-[250px] h-[300px] ml-8 rounded-lg"
+            src="images/trading.jpg"
+            alt=""
+          />
+          <h3 class="text-center m-2">Trading App</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="flex justify-between pb-8 my-5 h-[300px] bg-slate-900 text-white"
+    >
+      <div class="flex-1">
+        <p class="m-[50px]">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged.
+        </p>
+      </div>
+      <div class="flex-1">
+        <p class="m-[50px]">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged
+        </p>
+      </div>
+      <div class="flex-1">
+        <p class="m-[50px]">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged.
+        </p>
+      </div>
+    </footer>
+    <script src="javascripts/home.js"></script>
   </body>
 </html>
