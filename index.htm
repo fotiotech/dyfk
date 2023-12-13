@@ -4,19 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./stylesheets/styl.css" />
   </head>
   <body>
     <header
-      class="flex flex-wrap justify-between items-center p-2 bg-black text-white"
+      class="flex max-sm:relative flex-wrap justify-between items-center p-2 bg-black text-white"
     >
-      <h1 class="font-serif text-[40px] ml-4 hover:bg-red-500 rounded px-5">
+      <h1
+        class="font-serif text-[40px] max-sm:text-8 ml-4 hover:bg-red-500 rounded px-5"
+      >
         <a href="/">hi!</a>
       </h1>
-      <nav class="flex flex-wrap justify-center items-center ml-[500px]">
+      <nav
+        class="flex flex-wrap justify-center items-center max-sm:absolute max-sm:left-0 max-sm:top-0 max-sm:w-[200px] max-sm: max-sm: max-sm:bg-red-400 max-sm:invisible"
+      >
         <a
           href="/about"
-          class="m-2 mx-8 underline sm:text-red-600 underline-offset-4 hover:text-blue-300"
+          class="m-2 mx-8 max-sm: underline sm:text-red-600 underline-offset-4 hover:text-blue-300"
           >About</a
         >
         <a
@@ -35,6 +41,9 @@
           >Other</a
         >
       </nav>
+      <span class="material-symbols-outlined invisible max-sm:visible">
+        menu
+        </span>
     </header>
 
     <main>
@@ -42,11 +51,11 @@
         class="flex justify-between items-center h-[680px] bg-black text-white"
       >
         <div>
-          <p class="text-[40px] font-bold ml-[150px]">
+          <p class="text-[40px] max-sm:ml-4 font-bold ml-[150px]">
             <span class="text-red-500">I'm </span>Dylan!<br />
             Web developer
           </p>
-          <p class="my-5 ml-[150px]">
+          <p class="my-5 max-sm:ml-4 ml-[150px]">
             I'm a web developer who loves to code and learn new things. <br />
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
@@ -54,7 +63,7 @@
         </div>
       </header>
       <aside></aside>
-      <article class="flex flex-wrap my-20 p-10">
+      <article class="flex max-sm:w-[100%] flex-wrap my-20 p-10">
         <img
           class="w-[400px] h-[400px] rounded-lg"
           src="./images/nature.jpg"
@@ -74,7 +83,7 @@
           </p>
         </div>
       </article>
-      <section class="flex justify-center my-20 p-8">
+      <section class="flex justify-center max-sm:flex max-sm:flex-col my-20 p-8">
         <div class="w-[350px] h-[400px] p-2 m-2">
           <img
             class="w-[250px] h-[300px] ml-8 rounded-lg"
@@ -114,18 +123,8 @@
       </section>
     </main>
     <footer
-      class="flex justify-between pb-8 my-5 h-[300px] bg-slate-900 text-white"
+      class="flex justify-between max-sm:flex max-sm:flex-col max-sm:h-[800px] max-sm:mb-0 max-sm:my-0 pb-8 my-5 h-[300px] bg-slate-900 text-white"
     >
-      <div class="flex-1">
-        <p class="m-[50px]">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s
-        </p>
-      </div>
       <div class="flex-1">
         <p class="m-[50px]">
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -143,6 +142,15 @@
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book. It has survived not only
           five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged.
+        </p>
+      </div>
+      <div class="flex-1 max-sm:invisible">
+        <p class="m-[50px]">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
         </p>
       </div>
     </footer>
