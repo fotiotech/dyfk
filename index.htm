@@ -11,17 +11,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./stylesheets/styl.css" />
   </head>
-  <body class="max-sm:m-0 max-sm:p-0">
+  <body class="box-border font-sans">
     <header
       class="flex max-sm:relative justify-between items-center max-sm:p-0 p-2 bg-black text-white"
     >
       <h1
-        class="font-serif text-[40px] max-sm:text-8 ml-4 hover:bg-red-500 rounded px-5 max-sm:px-0"
+        class="font-serif text-[40px] max-sm:text-3 ml-4 hover:bg-red-500 rounded px-5 max-sm:px-0"
       >
         <a href="/dyfk/">hi!</a>
       </h1>
       <aside
-        class="absolute right-0 top-0 w-[200px] h-[350px] m-2 rounded-[5px] bg-[#2e2929] invisible"
+        class="absolute right-2 top-2 w-[200px] h-[350px] m-2 rounded-[5px] bg-[#2e2929] invisible"
       >
         <span id="close" class="material-symbols-outlined block text-end m-3">
           close
@@ -42,7 +42,7 @@
         <p class="text-center my-5"></p>
       </aside>
       <nav
-        class="flex flex-wrap ml-[200px] justify-center items-center max-sm:invisible"
+        class="flex ml-[200px] justify-center max-sm:w-2 items-center max-sm:invisible"
       >
         <a
           href="#about me"
@@ -67,7 +67,8 @@
       </nav>
 
       <span
-        class="material-symbols-outlined menu mr-8 max-sm:right-3 invisible max-sm:visible"
+        id="menu"
+        class="material-symbols-outlined ml-8 max-sm:mr-5 invisible max-sm:visible"
       >
         menu
       </span>
@@ -75,14 +76,14 @@
 
     <main>
       <header
-        class="flex justify-between items-center h-[680px] bg-black text-white"
+        class="flex justify-between items-center max-sm:h-[600px] h-[680px] bg-black text-white"
       >
         <img
           src="images/mm.jpg"
           alt=""
-          class="invisible absolute max-sm:visible max-sm:w-[130px] max-sm:h-[130px] max-sm:rounded-[50%] max-sm:top-[180px] max-sm:left-10"
+          class="invisible absolute max-sm:visible max-sm:w-[130px] max-sm:h-[130px] max-sm:rounded-[50%] max-sm:top-[120px] max-sm:left-10"
         />
-        <div>
+        <div class="max-sm:mt-[150px]">
           <p class="text-[40px] max-sm:ml-4 font-bold ml-[150px]">
             <span class="text-red-500">I'm </span>Dylan!<br />
             Software developer
@@ -157,7 +158,7 @@
       </section>
     </main>
     <footer
-      class="flex justify-between max-sm:flex-col max-sm:h-[100px] max-sm:mb-0 max-sm:p-4 pb-8 p-5 h-[100px] bg-slate-900 text-white"
+      class="flex flex-col justify-center max-sm:flex-col max-sm:h-[100px] max-sm:mb-0 max-sm:p-4 pb-8 p-5 h-[100px] bg-slate-900 text-white"
     >
       <p class="text-center">
         Copyright <span class="material-symbols-outlined"> copyright </span>2023
