@@ -11,40 +11,64 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./stylesheets/styl.css" />
   </head>
-  <body>
+  <body class="max-sm:m-0 max-sm:p-0">
     <header
-      class="flex max-sm:relative flex-wrap justify-between items-center p-2 bg-black text-white"
+      class="flex max-sm:relative justify-between items-center max-sm:p-0 p-2 bg-black text-white"
     >
       <h1
-        class="font-serif text-[40px] max-sm:text-8 ml-4 hover:bg-red-500 rounded px-5"
+        class="font-serif text-[40px] max-sm:text-8 ml-4 hover:bg-red-500 rounded px-5 max-sm:px-0"
       >
-        <a href="/">hi!</a>
+        <a href="/dyfk/">hi!</a>
       </h1>
+      <aside
+        class="absolute right-0 top-0 w-[200px] h-[350px] m-2 rounded-[5px] bg-[#2e2929] invisible"
+      >
+        <span id="close" class="material-symbols-outlined block text-end m-3">
+          close
+        </span>
+        <p class="my-5 text-center">
+          <a href="#Service" class="m-2 mx-8 hover:text-blue-300">Service</a>
+        </p>
+        <p class="my-5 text-center">
+          <a href="#Service" class="m-2 mx-8 hover:text-blue-300">Service</a>
+        </p>
+        <p class="text-center my-5">
+          <a href="#Contact" class="my-5 hover:text-blue-300">Contact</a>
+        </p>
+
+        <p class="my-5 text-center">
+          <a href="" class="hover:text-blue-300">Other</a>
+        </p>
+        <p class="text-center my-5"></p>
+      </aside>
       <nav
-        class="flex flex-wrap justify-center items-center max-sm:absolute max-sm:left-0 max-sm:top-0 max-sm:w-[200px] max-sm: max-sm: max-sm:bg-red-400 max-sm:invisible"
+        class="flex flex-wrap ml-[200px] justify-center items-center max-sm:invisible"
       >
         <a
-          href="/about"
-          class="m-2 mx-8 max-sm: underline sm:text-red-600 underline-offset-4 hover:text-blue-300"
+          href="#about me"
+          class="m-2 mx-8 underline underline-offset-4 hover:text-blue-300"
           >About</a
         >
         <a
-          href="/servises"
+          href="#Service"
           class="m-2 mx-8 underline underline-offset-4 hover:text-blue-300"
-          >Servise</a
+          >Service</a
         >
         <a
-          href="/contact"
+          href="#Contact"
           class="m-2 mx-8 underline underline-offset-4 hover:text-blue-300"
           >Contact</a
         >
         <a
-          href="/"
+          href=""
           class="m-2 mx-8 underline underline-offset-4 hover:text-blue-300"
           >Other</a
         >
       </nav>
-      <span class="material-symbols-outlined invisible max-sm:visible">
+
+      <span
+        class="material-symbols-outlined menu mr-8 max-sm:right-3 invisible max-sm:visible"
+      >
         menu
       </span>
     </header>
@@ -53,15 +77,19 @@
       <header
         class="flex justify-between items-center h-[680px] bg-black text-white"
       >
+        <img
+          src="images/mm.jpg"
+          alt=""
+          class="invisible absolute max-sm:visible max-sm:w-[130px] max-sm:h-[130px] max-sm:rounded-[50%] max-sm:top-[180px] max-sm:left-10"
+        />
         <div>
           <p class="text-[40px] max-sm:ml-4 font-bold ml-[150px]">
             <span class="text-red-500">I'm </span>Dylan!<br />
             Software developer
           </p>
           <p class="my-5 max-sm:ml-4 ml-[150px]">
-            I'm a web developer who loves to code and learn new things. <br />
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+            I'm a Software developer who is passionate to code, learn new things
+            and think about what's next. <br />
           </p>
         </div>
       </header>
@@ -69,35 +97,34 @@
       <article class="flex max-sm:w-[100%] flex-wrap my-20 p-10">
         <img
           class="w-[400px] h-[400px] rounded-lg"
-          src="./images/nature.jpg"
+          src="./images/me.jpg"
           alt=""
         />
         <div class="w-[600px] m-10">
-          <h2 class="font-serif text-[25px] my-4">About me</h2>
+          <h2 class="font-serif font-bold text-[30px] my-4">About me</h2>
           <p class="my-5">
-            <span class="font-sans"
-              >I'm a web developer who loves to code and learn new things.</span
-            >
-            <br />
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            I have a strong passion for tech and started coding while studying
+            science in high school. This journey ignited my curiosity to learn
+            programming, leading me to become a software developer.
           </p>
         </div>
       </article>
-      
+
       <section
         class="flex justify-center relative max-sm:flex max-sm:flex-col my-20 p-8"
       >
-      <h3 class="text-center absolute text-[25px] top-[-30px] max-sm:ml-20 font-serif  ">What i do</h3>
+        <h3
+          class="text-center absolute font-bold text-[30px] top-[-30px] max-sm:ml-20 font-serif"
+        >
+          Service
+        </h3>
         <div class="w-[350px] h-[400px] max-sm:my-5 p-2 m-2">
           <img
             class="w-[250px] h-[300px] ml-8 rounded-lg"
-            src="./images/foodapp.jpg"
+            src="./images/social.jpg"
             alt=""
           />
-          <h3 class="text-center m-2">Food App</h3>
+          <h3 class="text-center text-serif text-[18px] m-2">Wep App</h3>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy
@@ -106,10 +133,10 @@
         <div class="w-[350px] h-[400px] max-sm:my-5 p-2 m-2">
           <img
             class="w-[250px] h-[300px] ml-8 rounded-lg"
-            src="./images/social.jpg"
+            src="./images/trading.jpg"
             alt=""
           />
-          <h3 class="text-center m-2">Social media App</h3>
+          <h3 class="text-center text-serif text-[18px] m-2">Phone App</h3>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy
@@ -118,10 +145,10 @@
         <div class="w-[350px] h-[400px] max-sm:my-5 m-2 p-2">
           <img
             class="w-[250px] h-[300px] ml-8 rounded-lg"
-            src="./images/trading.jpg"
+            src="./images/desktop.jpg"
             alt=""
           />
-          <h3 class="text-center m-2">Trading App</h3>
+          <h3 class="text-center text-serif text-[18px] m-2">Desktop App</h3>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy
@@ -130,10 +157,13 @@
       </section>
     </main>
     <footer
-      class="flex justify-between max-sm:flex  max-sm:h-[100px] max-sm:mb-0 max-sm:p-4 pb-8 p-5 h-[100px] bg-slate-900 text-white"
+      class="flex justify-between max-sm:flex-col max-sm:h-[100px] max-sm:mb-0 max-sm:p-4 pb-8 p-5 h-[100px] bg-slate-900 text-white"
     >
-      <p></p>
-      <p></p>
+      <p class="text-center">
+        Copyright <span class="material-symbols-outlined"> copyright </span>2023
+        Portfolio. All rights reserved
+      </p>
+      <p class="text-center">Design: Fotio Dylan</p>
     </footer>
     <script src="./javascripts/home.js"></script>
   </body>

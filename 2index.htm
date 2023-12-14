@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dylan's Portfolio</title>
+  <!-- Add Tailwind CSS CDN -->
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+  <!-- Add custom styles -->
+  <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body class="font-sans bg-gray-100 text-gray-800">
+  <header class="bg-black text-white py-4">
+    <div class="container mx-auto flex items-center justify-between px-4">
+      <h1 class="text-4xl font-serif">
+        <a href="/">hi!</a>
+      </h1>
+      <nav class="hidden md:block">
+        <a href="/about" class="mx-4 underline hover:text-blue-300">About</a>
+        <a href="/services" class="mx-4 underline hover:text-blue-300">Services</a>
+        <a href="/contact" class="mx-4 underline hover:text-blue-300">Contact</a>
+        <a href="/" class="mx-4 underline hover:text-blue-300">Other</a>
+      </nav>
+      <span class="md:hidden material-symbols-outlined">menu</span>
+    </div>
+  </header>
+
+  <main class="container mx-auto py-8">
+    <section class="bg-black text-white py-16">
+      <div class="flex flex-col md:flex-row items-center md:space-x-8">
+        <img src="images/mm.jpg" alt="Dylan" class="w-32 h-32 rounded-full mb-4 md:mb-0">
+        <div class="text-center md:text-left">
+          <h2 class="text-4xl font-bold mb-4">
+            <span class="text-red-500">I'm </span>Dylan!<br>
+            Software developer
+          </h2>
+          <p class="mb-4">
+            I'm a passionate software developer eager to learn and create innovative solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <article class="flex flex-col md:flex-row items-center md:space-x-8 my-16 p-8">
+      <img src="./images/me.jpg" alt="Dylan's Photo" class="w-64 h-64 rounded-lg mb-8 md:mb-0">
+      <div>
+        <h2 class="text-2xl font-serif mb-4">About Me</h2>
+        <p>
+          I have a strong passion for technology and started coding while studying science in high school.
+          This journey ignited my curiosity to learn programming, leading me to become a software developer.
+        </p>
+      </div>
+    </article>
+
+    <section class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8 my-16 p-8">
+      <!-- Service Section -->
+      <!-- Similar structure with appropriate content for each service -->
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto text-center">
+      <!-- Footer content -->
+    </div>
+  </footer>
+
+  <!-- Include JavaScript -->
+  <script src="./javascripts/home.js"></script>
+</body>
+</html>
