@@ -253,6 +253,17 @@ footer p {
     display: none;
   }
 
+  .abdiv1 div h2 {
+    margin-top: 2px;
+  }
+
+  .abdiv1 div p {
+    margin-top: 10px;
+  }
+
+  #about {
+  }
+
   .abdiv1 {
     flex-direction: column;
   }
@@ -261,12 +272,18 @@ footer p {
     width: 280px;
     height: 330px;
     margin: 8px;
+    margin-bottom: 0;
+    margin-top: 40px;
     border-radius: 8px;
     margin-left: 46px;
   }
 
   .abdiv1 div h2 {
-    padding: 5px 0 10px 0;
+    padding-top: 5px;
+  }
+
+  .abdiv1 div p {
+    width: 300px;
   }
 
   .services {
