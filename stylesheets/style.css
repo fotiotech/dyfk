@@ -7,15 +7,260 @@
   text-decoration: none;
 }
 
+.firstHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+  color: azure;
+  background: #000;
+  position: relative;
+}
+
+aside {
+  display: none;
+  position: absolute;
+  width: 150px;
+  height: 250px;
+  top: 0;
+  right: 0;
+  margin: 3px;
+  border-radius: 10px;
+  background: #0a0a0ae7;
+}
+
+aside span {
+  margin: 10px 10px 10px 120px;
+}
+
+aside ul li {
+  text-align: center;
+  line-height: 40px;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 24px;
+  margin-right: 300px;
+}
+
+#menu {
+  display: none;
+}
+
+ul li {
+  padding: 0 10px 0 10px;
+}
+
+.Headertwo {
+  background: #000;
+  color: azure;
+  height: 700px;
+  padding: 10px;
+}
+
+.Headertwo img {
+  display: none;
+}
+
+.Hdiv1 {
+  margin-top: 230px;
+  margin-left: 130px;
+}
+
+.Hdiv1 h2 {
+  font-size: 56px;
+  padding: 10px 0 10px 0;
+}
+
+.Hdiv1 span {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  padding: 0 10px;
+  color: #c72e4a;
+}
+
+.Hdiv1 h1 {
+  padding: 5px 0 15px 0;
+}
+
+#about {
+  padding: 10px;
+}
+
+.abdiv1 img {
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.abdiv1 div {
+  margin: 60px;
+}
+
+.abdiv1 {
+  display: flex;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 10px 100px 10px;
+}
+
+#service h2 {
+  text-align: center;
+}
+
+#service h2 {
+}
+
+#ser1 {
+  width: 250px;
+  padding: 10px;
+  margin: 2px;
+}
+
+#ser1 img {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+#ser1 h4 {
+  text-align: center;
+  margin: 5px 2px 5px 2px;
+}
+
+#ser1 p {
+  margin: 5px 2px 5px 2px;
+}
+
+#ser2 {
+  width: 250px;
+  padding: 10px;
+  margin: 2px;
+}
+
+#ser2 img {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+#ser2 h4 {
+  text-align: center;
+  margin: 5px 2px 5px 2px;
+}
+
+#ser2 p {
+  margin: 5px 2px 5px 2px;
+}
+
+#ser3 {
+  width: 250px;
+  padding: 10px;
+  margin: 2px;
+}
+
+#ser3 img {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+#ser3 h4 {
+  text-align: center;
+  margin: 5px 2px 5px 2px;
+}
+
+#ser3 p {
+  margin: 5px 2px 5px 2px;
+}
+
 @media (max-width: 650px) {
-  header {
-    position: relative;
+  .Headertwo {
+    height: 500px;
   }
+
+  .firstHeader h1 a {
+    margin-left: 10px;
+    color: white;
+  }
+
+  .firstHeader h1 a:hover {
+    padding: 3px 5px 3px 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 255, 255, 0.719);
+  }
+
+  .Headertwo img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 80px 0 20px 20px;
+  }
+
+  .Hdiv1 {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  #menu {
+    display: block;
+  }
+
   nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-    
+    display: none;
+  }
+
+  .abdiv1 {
+    flex-direction: column;
+  }
+
+  .abdiv1 img {
+    width: 280px;
+    height: 330px;
+    margin: 8px;
+    border-radius: 8px;
+    margin-left: 46px;
+  }
+
+  .abdiv1 div h2 {
+    padding: 5px 0 10px 0;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    background-color: rgb(8, 5, 28);
+    height: 80px;
+  }
+
+  footer #footerspan {
+    color: aqua;
+  }
+
+  footer p {
+    padding: 5px 0 5px 0;
   }
 }

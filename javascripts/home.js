@@ -3,9 +3,9 @@ const aside = document.querySelector("aside");
 const closeMenu = document.querySelector("#close");
 
 menu.addEventListener("click", () => {
-  aside.classList.toggle("max-sm:visible");
+  aside.style.display = 'block';
 });
 
 closeMenu.addEventListener("click", () => {
-  aside.classList.toggle("max-sm:visible");
+  aside.style.display = 'none';
 });
