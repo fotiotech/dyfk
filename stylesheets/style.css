@@ -92,9 +92,7 @@ ul li {
 }
 
 .Hdiv1 span {
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-  font-style: italic;
+  font-family: sans-serif;
   padding: 0 10px;
   color: #c72e4a;
 }
@@ -298,6 +296,10 @@ footer p {
   .Hdiv1 {
     margin-left: 20px;
     margin-top: 20px;
+  }
+
+  .Hdiv1 h2 {
+    margin-left: ;
   }
 
   #menu {
