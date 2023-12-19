@@ -7,6 +7,7 @@
   text-decoration: none;
 }
 
+
 .firstHeader {
   display: flex;
   justify-content: space-between;
@@ -21,7 +22,7 @@
 aside {
   display: none;
   position: absolute;
-  width: 150px;
+  width: 200px;
   height: 250px;
   top: 0;
   right: 0;
@@ -31,12 +32,27 @@ aside {
 }
 
 aside span {
-  margin: 10px 10px 10px 120px;
+  margin: 10px 10px 10px 170px;
 }
 
 aside ul li {
   text-align: center;
   line-height: 40px;
+
+}
+
+aside ul > a {
+  display: block;
+  padding: 6px;
+  width: 150px;
+  margin-left: 30px;
+  color: white;
+  background-color: lightgreen;
+  border-radius: 10px;
+
+}
+
+aside ul li a {
   color: white;
 }
 
@@ -176,13 +192,13 @@ ul li {
 }
 
 #ser3 {
-  width: 250px;
+  width: 300px;
   padding: 10px;
   margin: 2px;
 }
 
 #ser3 img {
-  width: 200px;
+  width: 250px;
   height: 200px;
   margin: 2px;
   margin-left: 15px;
@@ -198,6 +214,40 @@ ul li {
   margin: 5px 2px 5px 2px;
 }
 
+.contact {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 500px;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+.contact a {
+  background-color: #546f99;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.contact > a {
+  color: white;
+}
+
+.contact > a > a {
+  color: white;
+}
+
+svg {
+  height: 20px;
+  width: 20px;
+  color: black;
+}
+
+
+
 footer {
   display: flex;
   flex-direction: column;
@@ -210,6 +260,11 @@ footer {
 
 footer #footerspan {
   color: aqua;
+}
+
+footer svg {
+  max-height: 15px;
+  color: white;
 }
 
 footer p {
@@ -269,7 +324,7 @@ footer p {
   }
 
   .abdiv1 img {
-    width: 280px;
+    width: 250px;
     height: 330px;
     margin: 8px;
     margin-bottom: 0;
@@ -288,6 +343,11 @@ footer p {
 
   .services {
     flex-direction: column;
+  }
+
+  .contact {
+    height: 300px;
+    padding: 20px;
   }
 
   footer {
