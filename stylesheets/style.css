@@ -140,8 +140,8 @@ ul li {
 }
 
 .abdiv1 img {
-  width: 400px;
-  height: 500px;
+  width: auto;
+  height: auto;
   margin: 20px;
   border-radius: 10px;
 }
@@ -185,8 +185,8 @@ ul li {
 }
 
 #ser1 img {
-  width: 200px;
-  height: 200px;
+  width: auto;
+  height: auto;
   margin: 2px;
   margin-left: 15px;
   border-radius: 10px;
@@ -232,8 +232,8 @@ ul li {
 }
 
 #ser3 img {
-  width: 250px;
-  height: 200px;
+  width: auto;
+  height: auto;
   margin: 2px;
   margin-left: 15px;
   border-radius: 10px;
@@ -341,8 +341,8 @@ footer p {
 
   .Headertwo img {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: auto;
     border-radius: 50%;
     margin: 40px 0 10px 0;
   }
@@ -392,8 +392,8 @@ footer p {
   }
 
   .abdiv1 img {
-    width: 250px;
-    height: 330px;
+    width: auto;
+    height: auto;
     margin-left: 15px;
     margin-top: 20px;
     border-radius: 8px;
@@ -419,8 +419,8 @@ footer p {
   }
 
   #ser1 img {
-    width: 100%;
-    height: 200px;
+    width: auto;
+    height: auto;
     margin: 2px;
     border-radius: 10px;
   }
@@ -441,8 +441,8 @@ footer p {
   }
 
   #ser2 img {
-    width: 100%;
-    height: 200px;
+    width: auto;
+    height: auto;
     margin: 2px;
     border-radius: 10px;
   }
@@ -463,8 +463,8 @@ footer p {
   }
 
   #ser3 img {
-    width: 100%;
-    height: 200px;
+    width: auto;
+    height: auto;
     margin: 2px;
     border-radius: 10px;
   }
