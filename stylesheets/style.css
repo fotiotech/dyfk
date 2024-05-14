@@ -9,6 +9,10 @@
   text-decoration: none;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 /* ------------ Header------------------ */
 
 .firstHeader {
@@ -253,10 +257,10 @@ nav {
 
 .services {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px 5px 20px 5px;
-  flex-direction: column;
 }
 
 #service h2 {
@@ -345,13 +349,19 @@ nav {
   margin: 5px 2px 5px 2px;
 }
 
+#why-choose-us {
+  background-color: #0a0a0af7;
+  color: #fff;
+}
+
 .why-choose-us {
   margin: 10px;
 }
 
 .why-choose-us h4 {
   font-size: 18px;
-  margin-bottom: 8px;
+  font-weight: 700;
+  margin: 18px 0 15px 0;
 }
 
 .why-choose-us ul li {
