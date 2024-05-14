@@ -63,7 +63,7 @@ function shareOnSelectedPlatform() {
       break;
     case "facebook":
       url =
-        "https://www.facebook.com/sharer/sharer.php?u=https://fotiotech.github.io/dyfk" +
+        "https://www.facebook.com/sharer/sharer.php?url=https://fotiotech.github.io/dyfk" +
         encodeURIComponent(text);
       break;
     case "linkedin":
