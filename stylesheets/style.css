@@ -376,14 +376,16 @@ nav {
 
 .get-in-touch input {
   padding: 10px;
-  border: solid 1px black;
+  border: solid 1px white;
+  background: none;
 }
 
 .get-in-touch textArea {
   width: 100%;
   height: 120px;
   padding: 10px;
-  border: solid 1px black;
+  border: solid 1px white;
+  background: none;
 }
 
 .get-in-touch button {
