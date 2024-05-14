@@ -234,7 +234,11 @@ nav {
 
 .abdiv1 div h2 {
   margin: 30px 0 20px 30px;
-  font-size: 28px;
+  font-size: 25px;
+}
+
+.abdiv1 div h2 span {
+  color: rgba(0, 255, 255);
 }
 
 .abdiv1 div p {
