@@ -53,7 +53,7 @@ favorite.addEventListener("click", () => {
 function shareOnSelectedPlatform() {
   var platform = document.getElementById("platformSelect").value;
   var url = ""; // Default URL
-  var text = "Check out this cool website!"; // Default text
+  var text = "Check out this portfolio!"; // Default text
 
   switch (platform) {
     case "twitter":
