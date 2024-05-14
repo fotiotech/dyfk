@@ -15,25 +15,64 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   padding: 8px;
-  color: azure;
+  color: white;
   background: #000;
   position: relative;
 }
 
+.firstHeader img {
+  width: 30px;
+  height: 30px;
+}
+
+.menu-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .firstHeader h1 {
-  margin-left: 20px;
+  margin-left: 10px;
   padding: 10px;
   border-radius: 10px;
 }
 
-.firstHeader a:hover {
-  background-color: #546f99;
+.firstHeader h1 a {
+  color: white;
 }
 
-.firstHeader a {
-  color: white;
+.firstHeader h1 a:hover {
+  padding: 3px 5px 3px 5px;
+  border-radius: 5px;
+  background-color: rgba(0, 255, 255, 0.719);
+}
+
+.favorite-share {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.platforms_div {
+  display: none;
+  position: absolute;
+  right: 0;
+}
+
+.favorite-share select {
+  width: 200px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.favorite-share > img {
+  border-radius: 8px;
+}
+
+.favorite-share img {
+  margin: 0 8px 0 8px;
 }
 
 /* ------------Aside------------------ */
@@ -44,10 +83,10 @@ aside {
   width: 200px;
   height: 250px;
   top: 0;
-  right: 0;
+  left: 0;
   margin: 3px;
   border-radius: 10px;
-  background: #0a0a0af7;
+  background: #0a0a0afa;
 }
 
 aside span {
@@ -73,174 +112,198 @@ aside ul li a {
   color: white;
 }
 
-/* ------------ nav ------------------ */
-
-nav ul {
-  display: flex;
-  gap: 24px;
-  margin-right: 300px;
-}
-
-nav a {
-  color: white;
-}
-
-#menu {
-  display: none;
-}
-
-ul li {
-  padding: 0 10px 0 10px;
-}
-
-/* ------------Main Header------------------ */
+/* ------------ body header------------------ */
 
 .Headertwo {
   background-image: linear-gradient(black, rgb(75, 73, 73));
   color: white;
-  height: 700px;
-  padding: 10px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.hero-div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 0;
 }
 
 #prof {
-  display: none;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.Headertwo img {
+  max-width: 100%;
+  aspect-ratio: square;
 }
 
 .Hdiv1 {
-  margin-top: 230px;
-  margin-left: 130px;
+  margin-left: 30px;
 }
 
-.Hdiv1 h2 {
-  font-size: 56px;
-  padding: 10px 0 10px 0;
+.Hdiv1 h5 {
+  padding: 5px 0 5px 0;
+  opacity: 80%;
 }
 
-.Hdiv1 span {
+.Hdiv1 h3 {
+  padding: 5px 0 5px 0;
+}
+
+.text p {
+  text-align: center;
+  margin-bottom: 10px;
+  opacity: 80%;
+}
+
+.text h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.text span {
   font-family: sans-serif;
   padding: 0 10px;
-  color: #c72e4a;
+  color: rgba(0, 255, 255, 0.719);
 }
 
-.Hdiv1 h1 {
-  padding: 5px 0 15px 0;
+.hero-social-media {
+  margin: 30px;
 }
 
-/* ------------ about ------------------ */
+.hero-social-media .button1 {
+  padding: 8px;
+  margin: 0 10px 0 10px;
+  border: solid 2px rgba(0, 255, 255, 0.719);
+  border-radius: 25px;
+  background-color: #ffffff00;
+}
+
+.hero-social-media svg {
+  color: rgba(0, 255, 255, 0.719);
+}
+
+.hero-social-media button {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 10px 0 10px;
+  color: white;
+  background-color: rgba(0, 255, 255, 0.719);
+}
+
+/* ------------Media nav------------------ */
+
+nav {
+  display: none;
+  position: absolute;
+}
+
+/*------------Media about -------------------*/
 
 #about {
   padding: 10px;
   background-color: #ddd;
 }
 
+.about {
+  padding: 3px;
+}
+
 .abdiv1 {
   display: flex;
-  height: 500px;
-  width: 100%;
+  flex-direction: column;
+  height: 600px;
   background-color: #fff;
   border-radius: 10px;
 }
 
 .aboutimage {
-  width: 500px;
-  height: 500px;
   overflow: hidden;
   background-color: #efefef;
+  border-radius: 8px 8px 0 0;
 }
 
 .abdiv1 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-  border-radius: 10px;
-}
-
-.abdiv1 div {
 }
 
 .abdiv1 div h2 {
-  margin: 50px;
+  margin: 30px 0 20px 30px;
+  font-size: 28px;
 }
 
 .abdiv1 div p {
-  margin: 50px;
-  width: 500px;
+  margin: 0px 20px 20px 30px;
 }
 
-/* ------------ Services ------------------ */
+/* ------------Media Services------------------ */
 
 .services {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  max-width: 100vw;
-  padding: 35px 10px 100px 10px;
+  padding: 20px 5px 20px 5px;
+  flex-direction: column;
 }
 
 #service h2 {
-  text-align: center;
-  margin-top: 40px;
-}
-
-#service h2 {
+  margin: 30px 0 0 15px;
+  font-size: 25px;
 }
 
 #ser1 {
-  width: 250px;
   padding: 10px;
   margin: 2px;
   overflow: hidden;
 }
 
 .serviceimage1 {
-  width: 200px;
+  width: 100%;
   height: 250px;
   overflow: hidden;
-  margin-left: 15px;
-  border-radius: 10px;
+  margin: 0;
+  margin: auto;
 }
 
 #ser1 img {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 #ser1 h4 {
-  text-align: center;
-  margin: 5px 2px 5px 2px;
+  font-size: 18px;
+  margin: 15px 0px 10px 0px;
 }
 
 #ser1 p {
-  margin: 5px 2px 5px 2px;
+  margin: 10px 0px 10px 0px;
 }
 
 #ser2 {
-  width: 250px;
   padding: 10px;
   margin: 2px;
   overflow: hidden;
 }
 
 .serviceimage2 {
-  width: 200px;
   height: 250px;
   overflow: hidden;
-  margin-left: 15px;
-  border-radius: 10px;
+  margin: 0;
+  margin: auto;
 }
 
 #ser2 img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 #ser2 h4 {
-  text-align: center;
-  margin: 5px 2px 5px 2px;
+  font-size: 18px;
+  margin: 15px 0px 10px 0px;
 }
 
 #ser2 p {
@@ -248,62 +311,103 @@ ul li {
 }
 
 #ser3 {
-  width: 300px;
   padding: 10px;
   margin: 2px;
   overflow: hidden;
 }
 
 .serviceimage3 {
-  width: 200px;
   height: 250px;
   overflow: hidden;
-  margin-left: 15px;
-  border-radius: 10px;
+  margin: 0;
+  margin: auto;
 }
 
 #ser3 img {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 #ser3 h4 {
-  text-align: center;
-  margin: 5px 2px 5px 2px;
+  font-size: 18px;
+  margin: 15px 0px 10px 0px;
 }
 
 #ser3 p {
   margin: 5px 2px 5px 2px;
 }
 
-/* ------------ Contact ------------------ */
-
-.contact {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 200px;
-  padding: 30px;
-}
-
-#contact h2 {
-  text-align: center;
-}
-
-.contact a {
-  background-color: rgba(0, 255, 255);
-  border-radius: 10px;
-  padding: 15px;
+.why-choose-us {
   margin: 10px;
 }
 
-.contact > a {
-  color: white;
+.why-choose-us h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 
-.contact > a > a {
-  color: white;
+.why-choose-us ul li {
+  margin: 10px 0 10px 15px;
+  list-style-type: disc;
+}
+
+.why-choose-us ul li span {
+  font-weight: 600;
+}
+
+.get-in-touch div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem /* 12px */;
+  margin: 15px 0 15px 0;
+}
+
+.get-in-touch input {
+  padding: 10px;
+  border: solid 1px black;
+}
+
+.get-in-touch textArea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  border: solid 1px black;
+}
+
+.get-in-touch button {
+  display: block;
+  font-size: 20px;
+  width: 100%;
+  height: 30px;
+  margin-top: 12px;
+  border: rgba(0, 255, 255);
+  border-radius: 8px;
+  background-color: rgba(0, 255, 255);
+}
+
+/* ------------Media Contact------------------ */
+
+.contact {
+  display: flex;
+  height: 200px;
+  padding: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact a {
+  padding: 15px;
+  margin: 6px;
+  background-color: rgba(0, 255, 255);
+  border-radius: 10px;
+}
+
+.contact > a {
+  color: black;
+}
+
+#contact h2 {
+  margin-left: 10px;
 }
 
 svg {
@@ -312,7 +416,7 @@ svg {
   color: black;
 }
 
-/* ------------ Footer ------------------ */
+/* ------------Media footer------------------ */
 
 footer {
   display: flex;
@@ -328,141 +432,206 @@ footer #footerspan {
   color: aqua;
 }
 
-footer svg {
-  max-height: 13px;
-  color: white;
-}
-
 footer p {
   padding: 5px 0 5px 0;
 }
 
-/* ------------Media query 650px------------------ */
-
-@media (max-width: 650px) {
-  /* ------------Media Header------------------ */
-
-  .firstHeader h1 {
-    margin-left: 10px;
+@media screen (min-width: 1224px) {
+  .firstHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 8px;
+    color: azure;
+    background: #000;
+    position: relative;
   }
 
-  .firstHeader h1 a {
+  .firstHeader h1 {
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .firstHeader a:hover {
+    background-color: #546f99;
+  }
+
+  .firstHeader a {
     color: white;
   }
 
-  .firstHeader h1 a:hover {
-    padding: 3px 5px 3px 5px;
-    border-radius: 5px;
+  /* ------------Aside------------------ */
+
+  aside {
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    margin: 3px;
+    border-radius: 10px;
+    background: #0a0a0af7;
+  }
+
+  aside span {
+    margin: 10px 10px 10px 170px;
+  }
+
+  aside ul li {
+    text-align: center;
+    line-height: 40px;
+  }
+
+  aside ul > a {
+    display: block;
+    padding: 6px;
+    width: 150px;
+    margin-left: 30px;
+    color: white;
     background-color: rgba(0, 255, 255, 0.719);
+    border-radius: 10px;
+  }
+
+  aside ul li a {
+    color: white;
+  }
+
+  /* ------------ nav ------------------ */
+
+  nav ul {
+    display: flex;
+    gap: 24px;
+    margin-right: 300px;
+  }
+
+  nav a {
+    color: white;
   }
 
   #menu {
-    display: block;
-    margin-right: 13px;
-  }
-
-  /* ------------Media body header------------------ */
-
-  .Headertwo {
-    height: 450px;
-    padding: 20px;
-    overflow: hidden;
-  }
-
-  #prof {
-    display: block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 40px 0 10px 0;
-  }
-
-  .Headertwo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-
-  .Hdiv1 {
-    margin-left: 10px;
-    margin-top: 5px;
-  }
-
-  .Hdiv1 h1 {
-    text-align: center;
-  }
-
-  .Hdiv1 h2 {
-    text-align: center;
-    font-size: 40px;
-  }
-
-  .Hdiv1 p {
-    margin-left: 45px;
-  }
-
-  /* ------------Media nav------------------ */
-
-  nav {
     display: none;
   }
 
-  /*------------Media about -------------------*/
-  .about {
-    padding: 3px;
-    width: 100%;
+  ul li {
+    padding: 0 10px 0 10px;
+  }
+
+  /* ------------Main Header------------------ */
+
+  .Headertwo {
+    background-image: linear-gradient(black, rgb(75, 73, 73));
+    color: white;
+    height: 700px;
+    padding: 10px;
+  }
+
+  #prof {
+    display: none;
+  }
+
+  .Hdiv1 {
+    margin-top: 230px;
+    margin-left: 130px;
+  }
+
+  .Hdiv1 h2 {
+    font-size: 56px;
+    padding: 10px 0 10px 0;
+  }
+
+  .Hdiv1 span {
+    font-family: sans-serif;
+    padding: 0 10px;
+    color: #c72e4a;
+  }
+
+  .Hdiv1 h1 {
+    padding: 5px 0 15px 0;
+  }
+
+  /* ------------ about ------------------ */
+
+  #about {
+    padding: 10px;
+    background-color: #ddd;
   }
 
   .abdiv1 {
-    flex-direction: column;
+    display: flex;
     height: 500px;
     width: 100%;
-    padding: 5px;
     background-color: #fff;
     border-radius: 10px;
   }
 
   .aboutimage {
-    width: 100%;
+    width: 500px;
     height: 500px;
     overflow: hidden;
-    border-radius: 8px;
     background-color: #efefef;
   }
 
+  .abdiv1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 10px;
+  }
+
+  .abdiv1 div {
+  }
+
   .abdiv1 div h2 {
-    font-size: 20px;
-    margin: 5px;
+    margin: 50px;
   }
 
   .abdiv1 div p {
-    margin: 5px;
-    width: 100%;
+    margin: 50px;
+    width: 500px;
   }
 
-  /* ------------Media Services------------------ */
+  /* ------------ Services ------------------ */
 
   .services {
-    width: 100%;
-    padding: 20px 5px 20px 5px;
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 35px 10px 100px 10px;
   }
 
   #service h2 {
-    text-align: left;
-    margin: 30px 0 0 15px;
-    font-size: 25px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  #service h2 {
   }
 
   #ser1 {
-    width: 100%;
+    width: 250px;
+    padding: 10px;
+    margin: 2px;
+    overflow: hidden;
   }
 
   .serviceimage1 {
-    width: 100%;
+    width: 200px;
     height: 250px;
-    margin-left: 0px;
+    overflow: hidden;
+    margin-left: 15px;
+    border-radius: 10px;
+  }
+
+  #ser1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   #ser1 h4 {
@@ -475,20 +644,24 @@ footer p {
   }
 
   #ser2 {
-    width: 100%;
+    width: 250px;
+    padding: 10px;
+    margin: 2px;
+    overflow: hidden;
   }
 
   .serviceimage2 {
-    width: 100%;
+    width: 200px;
     height: 250px;
-    margin-left: 0px;
+    overflow: hidden;
+    margin-left: 15px;
+    border-radius: 10px;
   }
 
   #ser2 img {
     width: 100%;
-    height: 250px;
-    margin: 2px;
-    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
   }
 
   #ser2 h4 {
@@ -501,19 +674,24 @@ footer p {
   }
 
   #ser3 {
-    width: 90%;
-    padding: 5px;
+    width: 300px;
+    padding: 10px;
     margin: 2px;
-  }
-
-  #ser3 {
-    width: 100%;
+    overflow: hidden;
   }
 
   .serviceimage3 {
-    width: 100%;
+    width: 200px;
     height: 250px;
-    margin-left: 0px;
+    overflow: hidden;
+    margin-left: 15px;
+    border-radius: 10px;
+  }
+
+  #ser3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   #ser3 h4 {
@@ -525,24 +703,42 @@ footer p {
     margin: 5px 2px 5px 2px;
   }
 
-  /* ------------Media Contact------------------ */
+  /* ------------ Contact ------------------ */
 
   .contact {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     height: 200px;
-    padding: 10px;
-  }
-
-  .contact a {
-    padding: 15px;
-    margin: 6px;
+    padding: 30px;
   }
 
   #contact h2 {
-    text-align: left;
-    margin-left: 10px;
+    text-align: center;
   }
 
-  /* ------------Media footer------------------ */
+  .contact a {
+    background-color: rgba(0, 255, 255);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .contact > a {
+    color: white;
+  }
+
+  .contact > a > a {
+    color: white;
+  }
+
+  svg {
+    height: 20px;
+    width: 20px;
+    color: black;
+  }
+
+  /* ------------ Footer ------------------ */
 
   footer {
     display: flex;
@@ -556,6 +752,11 @@ footer p {
 
   footer #footerspan {
     color: aqua;
+  }
+
+  footer svg {
+    max-height: 13px;
+    color: white;
   }
 
   footer p {
