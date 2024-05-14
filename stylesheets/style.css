@@ -171,6 +171,9 @@ aside ul li a {
 }
 
 .hero-social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 30px;
 }
 
