@@ -188,6 +188,7 @@ aside ul li a {
 
 .hero-social-media button {
   padding: 10px;
+  border: solid 1px grey;
   border-radius: 10px;
   margin: 0 10px 0 10px;
   color: white;
