@@ -229,9 +229,14 @@ nav {
 }
 
 .aboutimage {
+  width: 45%;
   overflow: hidden;
   background-color: #eee;
   border-radius: 8px 0 0 8px;
+}
+
+.abDiv {
+  width: 55%;
 }
 
 .abdiv1 img {
