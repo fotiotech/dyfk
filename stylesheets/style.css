@@ -408,7 +408,6 @@ nav {
 }
 
 #projects p {
-  
 }
 /* ------------Media Contact------------------ */
 
@@ -460,7 +459,7 @@ footer p {
   padding: 5px 0 5px 0;
 }
 
-@media screen (min-width: 1224px) {
+@media screen and (min-width: 1224px) {
   .firstHeader {
     display: flex;
     justify-content: space-between;
