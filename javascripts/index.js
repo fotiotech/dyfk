@@ -32,9 +32,15 @@ contactButton.addEventListener("click", () => {
 
 menu.addEventListener("click", () => {
   aside.style.display = "block";
+  aside.style.width = "200px";
+  aside.style.height = "250px";
+  aside.style.transition = "all 2s ease";
 });
 
 closeMenu.addEventListener("click", () => {
+  aside.style.width = "0";
+  aside.style.height = "0";
+  aside.style.transition = "all 0.3ms ease";
   aside.style.display = "none";
 });
 

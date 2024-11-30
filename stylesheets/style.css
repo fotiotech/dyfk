@@ -84,10 +84,10 @@ html {
 aside {
   display: none;
   position: absolute;
-  width: 200px;
-  height: 250px;
-  top: 0;
-  left: 0;
+  width: 0;
+  height: 0;
+  top: 17px;
+  left: 5px;
   margin: 3px;
   border-radius: 10px;
   background: #0a0a0afa;
@@ -222,8 +222,8 @@ nav {
 
 .abdiv1 {
   display: flex;
-  flex-direction: column;
-  height: 600px;
+  /* flex-direction: column; */
+  /* height: 600px; */
   background-color: #fff;
   border-radius: 10px;
 }
@@ -231,7 +231,7 @@ nav {
 .aboutimage {
   overflow: hidden;
   background-color: #eee;
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px 0 0 8px;
 }
 
 .abdiv1 img {
@@ -240,16 +240,22 @@ nav {
 }
 
 .abdiv1 div h2 {
-  margin: 30px 0 20px 30px;
+  margin: 15px 0 5px 15px;
   font-size: 25px;
 }
 
 .abdiv1 div h2 span {
-  color: rgba(0, 255, 255);
+  /* color: rgba(0, 255, 255); */
 }
 
-.abdiv1 div p {
-  margin: 0px 20px 20px 30px;
+.abdiv1 div div {
+  margin: 0px 0px 10px 15px;
+  opacity: 80%;
+}
+
+.abdiv1 div div p {
+  margin-top: 5px;
+  color: #000;
 }
 
 /* ------------ Services------------------ */
@@ -395,6 +401,15 @@ nav {
   background-color: rgba(0, 255, 255);
 }
 
+/* ------------Media Projects------------------ */
+
+#projects {
+  padding: 10px;
+}
+
+#projects p {
+  
+}
 /* ------------Media Contact------------------ */
 
 .contact {
